@@ -28,9 +28,15 @@ SITE = ROOT / "docs"                                       # what GitHub Pages s
 REF_HOST = "joenobody-ai.github.io/different-world-notes"
 
 BLOCKED_OK = {
+    # documented API codes and WAF blocks — see scripts/make_sources.py for the justification of each
     "https://www.imdb.com/title/tt33081352/",
     "https://www.imdb.com/title/tt0092339/",
     "https://www.bls.gov/",
+    "https://nmaahc.si.edu/",
+    "https://www.loc.gov/collections/civil-rights-history-project/",
+    "https://www.wdl.org/",
+    "https://sites.ed.gov/whhbcu/",
+    "https://www.annualreviews.org/journal/soc",
 }
 
 fails: list[str] = []

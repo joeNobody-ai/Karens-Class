@@ -36,6 +36,21 @@ tested.* Everything in the syllabus is in service of that.
 5. **Decide about the exam keys.** They live in this repository (`course/exams/*-key.md` and the
    `instructor/` pages of the built site). If your repository is public, note that trade-off explicitly.
 
+### Archives worth a browser tab
+
+These three are the right places to send students hunting for primary material, but the course's
+automated link check cannot reach them from a server — they block automated clients (the Smithsonian's
+own homepage returns 403 to the same checker, which is how we know it is a bot filter and not a dead
+link). Verify each in your browser, then put them on a handout if they resolve:
+
+- **Smithsonian National Museum of African American History and Culture** — `nmaahc.si.edu`
+- **Library of Congress, Civil Rights History Project** — `loc.gov/collections/civil-rights-history-project/`
+  (loc.gov itself answers 200; only the collection path is filtered)
+- **US Department of Education HBCU programme pages** — `sites.ed.gov/whhbcu/`
+
+The reference site's own sources page (`course/sources.md`) lists every link the checker *could*
+confirm, and separates them from these.
+
 ## 3. The evidence rule (teach it in Session 1, enforce it all term)
 
 | Tier | Meaning | Test |

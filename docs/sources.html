@@ -87,14 +87,20 @@
 <li><a href="https://www.naacp.org/">https://www.naacp.org/</a></li>
 <li><a href="https://www.oyez.org/">https://www.oyez.org/</a></li>
 </ul>
-<h2>Reachable in a browser, blocked to automated checks</h2>
-<p>These are real and stable, but a headless checker cannot confirm them from this host. Each is listed with the reason:</p>
+<h2>Readable by a human, blocked to automated checks</h2>
+<p>These are worth using, but a headless checker cannot confirm them from this host. The strongest evidence that this is a bot filter rather than a dead link: the Smithsonian's own homepage returns 403 to the same client. Open each in a browser before you put it on a handout.</p>
 <ul>
-<li><a href="https://www.imdb.com/title/tt0092339/">https://www.imdb.com/title/tt0092339/</a> — IMDb returns 202 to automated checkers; the title ID was confirmed via IMDb's own suggestion API</li>
-<li><a href="https://www.imdb.com/title/tt33081352/">https://www.imdb.com/title/tt33081352/</a> — IMDb returns 202 to automated checkers; the title ID was confirmed via IMDb's own suggestion API</li>
+<li><a href="https://nmaahc.si.edu/">https://nmaahc.si.edu/</a> — WAF block (403) on automated requests; the Smithsonian's own homepage (si.edu) also returns 403, so this is a filter on automated clients, not a dead link</li>
+<li><a href="https://sites.ed.gov/whhbcu/">https://sites.ed.gov/whhbcu/</a> — WAF block (403) on automated requests — verify in a browser before putting it on a handout</li>
+<li><a href="https://www.annualreviews.org/journal/soc">https://www.annualreviews.org/journal/soc</a> — Publisher WAF block (403) on automated requests</li>
+<li><a href="https://www.imdb.com/title/tt0092339/">https://www.imdb.com/title/tt0092339/</a> — IMDb answers 202 to automated checkers; the title ID was confirmed through IMDb's own suggestion API</li>
+<li><a href="https://www.imdb.com/title/tt33081352/">https://www.imdb.com/title/tt33081352/</a> — IMDb answers 202 to automated checkers; the title ID was confirmed through IMDb's own suggestion API</li>
+<li><a href="https://www.loc.gov/collections/civil-rights-history-project/">https://www.loc.gov/collections/civil-rights-history-project/</a> — WAF block (403) on the collection path, while loc.gov itself answers 200 — verify in a browser</li>
+<li><a href="https://www.wdl.org/">https://www.wdl.org/</a> — WAF block (403) on automated requests. Note the World Digital Library was folded into the Library of Congress and its content is frozen</li>
 </ul>
 <h2>Dropped after checking</h2>
-<p>Candidate URLs that failed a check and were removed rather than cited: the ASA's <em>Contexts</em> landing page (404), <em>Annual Review of Sociology</em> (403 to automated requests), and a Cornell Legal Information Institute URL with an incorrect case number (now cited instead as the two Supreme Court dockets below).</p>
+<p>Two candidates were removed outright as broken rather than cited: the ASA's <em>Contexts</em> landing page (404) and a Cornell Legal Information Institute URL that carried an incorrect case number (the ruling is cited instead through the two Supreme Court docket pages below, which answered 200).</p>
+<p>Nothing was dropped merely for refusing automated requests — those are listed in the section above, with the reason, so you can check them yourself.</p>
 <p>For the affirmative-action ruling discussed in Session 14's wider context, use the docket pages, which were checked and answered 200:</p>
 <ul>
 <li><a href="https://www.law.cornell.edu/supct/cert/20-1199">https://www.law.cornell.edu/supct/cert/20-1199</a></li>

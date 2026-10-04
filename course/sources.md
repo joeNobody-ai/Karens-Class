@@ -63,16 +63,23 @@ Two kinds of citation here. **Books and articles** are cited by author, title an
 - <https://www.naacp.org/>
 - <https://www.oyez.org/>
 
-## Reachable in a browser, blocked to automated checks
+## Readable by a human, blocked to automated checks
 
-These are real and stable, but a headless checker cannot confirm them from this host. Each is listed with the reason:
+These are worth using, but a headless checker cannot confirm them from this host. The strongest evidence that this is a bot filter rather than a dead link: the Smithsonian's own homepage returns 403 to the same client. Open each in a browser before you put it on a handout.
 
-- <https://www.imdb.com/title/tt0092339/> — IMDb returns 202 to automated checkers; the title ID was confirmed via IMDb's own suggestion API
-- <https://www.imdb.com/title/tt33081352/> — IMDb returns 202 to automated checkers; the title ID was confirmed via IMDb's own suggestion API
+- <https://nmaahc.si.edu/> — WAF block (403) on automated requests; the Smithsonian's own homepage (si.edu) also returns 403, so this is a filter on automated clients, not a dead link
+- <https://sites.ed.gov/whhbcu/> — WAF block (403) on automated requests — verify in a browser before putting it on a handout
+- <https://www.annualreviews.org/journal/soc> — Publisher WAF block (403) on automated requests
+- <https://www.imdb.com/title/tt0092339/> — IMDb answers 202 to automated checkers; the title ID was confirmed through IMDb's own suggestion API
+- <https://www.imdb.com/title/tt33081352/> — IMDb answers 202 to automated checkers; the title ID was confirmed through IMDb's own suggestion API
+- <https://www.loc.gov/collections/civil-rights-history-project/> — WAF block (403) on the collection path, while loc.gov itself answers 200 — verify in a browser
+- <https://www.wdl.org/> — WAF block (403) on automated requests. Note the World Digital Library was folded into the Library of Congress and its content is frozen
 
 ## Dropped after checking
 
-Candidate URLs that failed a check and were removed rather than cited: the ASA's *Contexts* landing page (404), *Annual Review of Sociology* (403 to automated requests), and a Cornell Legal Information Institute URL with an incorrect case number (now cited instead as the two Supreme Court dockets below).
+Two candidates were removed outright as broken rather than cited: the ASA's *Contexts* landing page (404) and a Cornell Legal Information Institute URL that carried an incorrect case number (the ruling is cited instead through the two Supreme Court docket pages below, which answered 200).
+
+Nothing was dropped merely for refusing automated requests — those are listed in the section above, with the reason, so you can check them yourself.
 
 For the affirmative-action ruling discussed in Session 14's wider context, use the docket pages, which were checked and answered 200:
 
