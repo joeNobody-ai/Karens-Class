@@ -93,4 +93,5 @@ inconsistency · co-optation and subversion · uplift ideology
 - Margaret L. Hunter, *Race, Gender, and the Politics of Skin Tone* (2005)
 - Evelyn Brooks Higginbotham, *Righteous Discontent: The Women's Movement in the Black Baptist Church, 1880–1920* (1993), introduction
 - E. Franklin Frazier, *Black Bourgeoisie* (1957) — read it critically; it is the classic statement of intraracial class critique
+- **The vocabulary reference** (`lingo.html`): its "handle with care" section is the material for this session's *who uses which words about whom* exercise — the terms stay on the slide, numbered, unspoken
 - Callback card — the pageant: https://joenobody-ai.github.io/different-world-notes/v2/ep07.html#ep07-miss-gilbert-hall

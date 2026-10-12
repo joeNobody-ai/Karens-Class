@@ -89,3 +89,4 @@ institution · unpaid ritual labour
 - Maurice Halbwachs, *On Collective Memory* (1925/1950)
 - Patricia Hill Collins, *Black Feminist Thought* (1990), ch. 6 on community and othermothering
 - Callback card — stepping and homecoming: https://joenobody-ai.github.io/different-world-notes/v2/ep03.html#ep03-homecoming-step
+- **The vocabulary reference — the campus and Greek-life section** (`lingo.html`): stepping, step shows, yard shows, pledging, probate, lines. Use it so this session's inventory uses the right institutional terms rather than paraphrases

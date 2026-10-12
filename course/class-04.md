@@ -91,4 +91,5 @@ scripts · commitment vocabulary
 - Candace West and Don H. Zimmerman, "Doing Gender" (1987)
 - Patricia Hill Collins, *Black Feminist Thought* (1990), ch. 7
 - Robin R. Means Coleman, *African American Viewers and the Black Situation Comedy* (1998), ch. on romance and respectability
+- **The vocabulary reference** (`lingo.html`): the era tables in section 3 of the reference are the raw material for this session's vocabulary drill. Read them before class.
 - The courtship callback chain: https://joenobody-ai.github.io/different-world-notes/v2/ep04.html#ep04-cuffing-season

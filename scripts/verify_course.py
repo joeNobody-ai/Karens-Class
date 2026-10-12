@@ -94,6 +94,7 @@ def main() -> int:                                          # noqa: C901
     print("1. files")
     expected = ["README.md", "data/course_catalog.json", "data/original_episodes.json",
                 "course/syllabus.md", "course/instructor-guide.md", "course/rubrics.md",
+                "course/lingo.md",
                 "course/sources.md", "course/exams/midterm.md", "course/exams/midterm-key.md",
                 "course/exams/final.md", "course/exams/final-key.md"]
     expected += [f"course/class-{i:02d}.md" for i in range(1, 16)]
@@ -209,11 +210,33 @@ def main() -> int:                                          # noqa: C901
         ok(("## Criteria" in text) or ("## Rubric" in text), f"homework-{i:02d}: has criteria or rubric")
         ok("**Due:**" in text, f"homework-{i:02d}: states its due session")
 
+    print("8b. the lingo reference")
+    lingo_md = read(COURSE / "lingo.md")
+    for needle in ("## 1. The evidence rule, applied to vocabulary",
+                   "## 2. Where each section does work",
+                   "## 3. Three classroom exercises",
+                   "## 4. The protocol for the instructors",
+                   "## 5. Why this belongs in a *sociology* course",
+                   "## 6. Using it in assessment",
+                   "## 7. Sources"):
+        ok(needle in lingo_md, f"lingo.md has section: {needle}")
+    for tier in ("documented", "era lexicon", "handle with care"):
+        ok(tier in lingo_md.lower(), f"lingo.md explains the '{tier}' tier")
+    ok("different-world-notes/lingo.html" in lingo_md, "lingo.md points at the tiered reference")
+    ok("different-world-notes/v2/lingo.html" in lingo_md, "lingo.md points at the Netflix-style view")
+    # the sessions and assignments where vocabulary does real work must actually cite it
+    for rel in ("class-03", "class-04", "class-05", "class-08", "class-13", "assignments/homework-04"):
+        text = read(COURSE / f"{rel}.md")
+        ok("lingo" in text.lower(), f"{rel} cross-references the lingo reference")
+    ok("protocol" in read(COURSE / "instructor-guide.md").lower(),
+       "instructor guide carries the vocabulary protocol")
+
     print("9. built site")
     if not SITE.exists():
         fails.append("site/ not built — run scripts/build_course.py")
     else:
-        slugs = ["index", "syllabus", "midterm", "final", "rubrics", "sources", "instructor-guide"]
+        slugs = ["index", "syllabus", "midterm", "final", "rubrics", "sources", "instructor-guide",
+                 "lingo"]
         slugs += [f"class-{i:02d}" for i in range(1, 16)]
         slugs += [f"homework-{i:02d}" for i in range(1, 16)]
         for s in slugs:

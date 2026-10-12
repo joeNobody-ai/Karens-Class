@@ -100,3 +100,4 @@ culturally transmitted disadvantage · class heterogeneity · kin networks · fa
 - Annette Lareau, *Unequal Childhoods* (2003)
 - Prudence L. Carter, *Keepin' It Real: School Success Beyond Black and White* (2005)
 - Mary Pattillo, *Black Picket Fences* (1999)
+- **The vocabulary reference** (`lingo.html`): the verbal-traditions section — signifying and the dozens are the community's own enforcement mechanisms, and they belong in this session's discussion of how families and neighbourhoods manage reputation

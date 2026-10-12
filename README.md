@@ -23,6 +23,7 @@ revival *and* the 1987–1993 original it keeps calling back to.
 | `course/exams/midterm.md`, `final.md` | The two exams, as issued to students |
 | `course/exams/midterm-key.md`, `final-key.md` | Model answers, point allocations, and the grading rubric — **instructor material** |
 | `course/instructor-guide.md` | How to run the room: norm-setting, the hard conversations, objections and answers, accessibility, adaptation notes |
+| `course/lingo.md` | The vocabulary reference for the course: the three tiers applied to slang, where each section does work session by session, three classroom exercises, and the protocol for handling racialised vocabulary |
 | `course/sources.md` | Bibliography — books and articles by citation, plus institution links that were HTTP-checked on the build date |
 | `course/rubrics.md` | Reusable rubrics (discussion, writing, data exercise, capstone) |
 | `docs/` | Generated HTML for the course site — this is what GitHub Pages serves |

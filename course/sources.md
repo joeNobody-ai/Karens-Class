@@ -2,7 +2,7 @@
 
 Two kinds of citation here. **Books and articles** are cited by author, title and year — no links, because links to paywalled literature rot fastest. **Institutional and reference links** were each checked with an HTTP request on the date below; only ones that answered `200` are listed as live.
 
-**Link checks run:** 2026-10-04 · 34 of 42 candidate URLs answered 200.
+**Link checks run:** 2026-10-12 · 51 of 61 candidate URLs answered 200.
 
 > **Before you teach with any of these:** links, and especially statistics, age quickly. Re-run `python3 scripts/check_sources.py` from the parent project before the term starts, and re-check every figure you put on a board.
 
@@ -20,7 +20,6 @@ Two kinds of citation here. **Books and articles** are cited by author, title an
 - <https://www.cdc.gov/nchs/index.html>
 - <https://www.census.gov/topics/income-poverty/wealth.html>
 - <https://www.census.gov/topics/population/race.html>
-- <https://www.epi.org/>
 - <https://www.federalreserve.gov/>
 - <https://www.federalreserve.gov/econres/scfindex.htm>
 - <https://www.kff.org/racial-equity-and-health-policy/>
@@ -62,6 +61,27 @@ Two kinds of citation here. **Books and articles** are cited by author, title an
 - <https://www.law.cornell.edu/supct/cert/21-707>
 - <https://www.naacp.org/>
 - <https://www.oyez.org/>
+
+### Language, slang and the vocabulary of race
+
+- <https://en.wikipedia.org/wiki/African-American_Vernacular_English>
+- <https://en.wikipedia.org/wiki/Bougie>
+- <https://en.wikipedia.org/wiki/Cuffing_season>
+- <https://en.wikipedia.org/wiki/Ebonics_(word)>
+- <https://en.wikipedia.org/wiki/Fraternities_and_sororities_in_North_America>
+- <https://en.wikipedia.org/wiki/Hazing>
+- <https://en.wikipedia.org/wiki/Jive_talk>
+- <https://en.wikipedia.org/wiki/Marching_band#HBCU>
+- <https://en.wikipedia.org/wiki/National_Pan-Hellenic_Council>
+- <https://en.wikipedia.org/wiki/Rizz_(slang)>
+- <https://en.wikipedia.org/wiki/Signifyin%27>
+- <https://en.wikipedia.org/wiki/Stepping_(African-American)>
+- <https://en.wikipedia.org/wiki/The_dozens>
+- <https://en.wikipedia.org/wiki/Throw_shade>
+- <https://greensdictofslang.com/>
+- <https://www.dialectsarchive.com/>
+- <https://www.linguisticsociety.org/content/resolution-ebonics>
+- <https://www.linguisticsociety.org/resource/african-american-english>
 
 ## Readable by a human, blocked to automated checks
 
@@ -140,6 +160,14 @@ For the affirmative-action ruling discussed in Session 14's wider context, use t
 - Doug McAdam, *Political Process and the Development of Black Insurgency, 1930-1970* (1982)
 - David A. Snow and Robert D. Benford, "Ideology, Frame Resonance, and Participant Mobilization" (1988)
 
+### Language, slang and the vocabulary of race
+
+- Geneva Smitherman, *Black Talk: Words and Phrases from the Hood to the Amen Corner* (1994)
+- Clarence Major, *Juba to Jive: A Dictionary of African-American Slang* (1994)
+- John Russell Rickford and Russell John Rickford, *Spoken Soul: The Story of Black English* (2000)
+- John Baugh, *Black Street Speech: Its History, Structure, and Survival* (1983)
+- Marlon Riggs, *Color Adjustment* (1992) — for how television has handled Black speech and imagery
+
 ## The shows as sources
 
 Episode facts used throughout the course (titles, season and episode numbers, air dates, credits, cast) come from the reference project's documented pages, which cite their own sources and label every claim by tier:
@@ -151,4 +179,4 @@ Episode facts used throughout the course (titles, season and episode numbers, ai
 
 **Attribution and use.** *A Different World* and its characters and episodes are the property of their rights holders. This course teaches *about* the shows: it reproduces no scripts, no stills, and no footage, and it summarises only what the shows' own published episode summaries state. Students are directed to watch the episodes through legitimate services or library holdings, verified locally by the instructor.
 
-*Sources file generated 2026-10-04 by scripts/make_sources.py from the HTTP check log — edit the script, not this file.*
+*Sources file generated 2026-10-12 by scripts/make_sources.py from the HTTP check log — edit the script, not this file.*

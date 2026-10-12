@@ -95,6 +95,7 @@ footer.site{border-top:1px solid var(--line);padding:1.6rem 1.2rem 3rem;color:va
 TITLES = {
     "syllabus": "Syllabus",
     "instructor-guide": "Instructor guide",
+    "lingo": "Lingo &amp; slang",
     "rubrics": "Rubrics",
     "sources": "Sources",
 }
@@ -129,7 +130,7 @@ def nav_html(current: str, instructor_pages: list[tuple[str, str]]) -> str:
         cls = ' class="here"' if slug == current else ""
         parts.append(f'<li><a href="{slug}.html"{cls}>{label}</a></li>')
     parts.append("</ul><h2>Reference</h2><ul>")
-    for slug in ("rubrics", "sources"):
+    for slug in ("lingo", "rubrics", "sources"):
         cls = ' class="here"' if slug == current else ""
         parts.append(f'<li><a href="{slug}.html"{cls}>{TITLES[slug]}</a></li>')
     if instructor_pages:
@@ -210,6 +211,7 @@ def main() -> int:
         plan.append((COURSE / "assignments" / f"homework-{i:02d}.md", f"homework-{i:02d}"))
     plan.append((COURSE / "exams/midterm.md", "midterm"))
     plan.append((COURSE / "exams/final.md", "final"))
+    plan.append((COURSE / "lingo.md", "lingo"))
     plan.append((COURSE / "rubrics.md", "rubrics"))
     plan.append((COURSE / "sources.md", "sources"))
 

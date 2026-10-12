@@ -68,6 +68,13 @@ or interpretation?"
 
 **Norms to set in Session 1 and enforce every week.**
 
+0. **The vocabulary protocol.** Two rules, stated on day one and never relaxed: the instructor does not
+   perform the vernacular, and no student is asked to define, translate, pronounce or perform a term.
+   Definitions come from the cited sources (see `lingo.md`), the "handle with care" terms are numbered on
+   slides and discussed by number, and nobody in the room ever has to be the consultant on their own
+   language. If you break rule one — and it is easy to break by accident — name it out loud and correct
+   it; the room learns more from the correction than from never seeing it.
+
 1. **No spokesperson rule.** Nobody speaks for a group. You will be asked directly, at least once, to
    justify your position without being asked to represent anyone.
 2. **Text first.** Claims must come from the episodes, the readings, or the data — not from general

@@ -29,6 +29,7 @@ GROUP_TITLES = {
     "media-and-representation": "Media and representation",
     "the-shows-own-record": "The shows' own record",
     "civil-rights-and-policy-context": "Civil rights and policy context",
+    "language-and-vocabulary": "Language, slang and the vocabulary of race",
 }
 
 # URLs that a headless checker cannot reach from this host but that a human can. Two categories:
@@ -94,6 +95,13 @@ BOOKS = {
     "Movements and campus politics": [
         "Doug McAdam, *Political Process and the Development of Black Insurgency, 1930-1970* (1982)",
         "David A. Snow and Robert D. Benford, \"Ideology, Frame Resonance, and Participant Mobilization\" (1988)",
+    ],
+    "Language, slang and the vocabulary of race": [
+        "Geneva Smitherman, *Black Talk: Words and Phrases from the Hood to the Amen Corner* (1994)",
+        "Clarence Major, *Juba to Jive: A Dictionary of African-American Slang* (1994)",
+        "John Russell Rickford and Russell John Rickford, *Spoken Soul: The Story of Black English* (2000)",
+        "John Baugh, *Black Street Speech: Its History, Structure, and Survival* (1983)",
+        "Marlon Riggs, *Color Adjustment* (1992) — for how television has handled Black speech and imagery",
     ],
 }
 

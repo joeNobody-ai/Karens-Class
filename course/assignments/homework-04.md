@@ -22,6 +22,7 @@ vocabulary assumes.
 
 - Ep 4 callback cards, including the title echo and the romance chain:
   https://joenobody-ai.github.io/different-world-notes/v2/ep04.html
+- **The vocabulary reference** — section 2 (verbal traditions) and section 3 (the 1987–93 register) are your source of terms: https://joenobody-ai.github.io/different-world-notes/lingo.html
 - Original: S2E26 *Dream Lover* (1988-11-03); S1E4 *Those Who Can't...Tutor* (1987-10-22)
 - Optional: Candace West and Don H. Zimmerman, "Doing Gender" (1987) — for the idea that gender is
   produced in interaction and accountable to an audience

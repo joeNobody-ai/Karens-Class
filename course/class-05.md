@@ -102,3 +102,6 @@ public health communication · the special episode
 - Erving Goffman, *Stigma: Notes on the Management of Spoiled Identity* (1963)
 - Paul Farmer, "An Anthropology of Structural Violence" (2004)
 - Callback card — the crisis slot and the 1991 episode: https://joenobody-ai.github.io/different-world-notes/v2/ep05.html#ep05-quiet-crisis-slot
+- **The vocabulary reference — the "handle with care" section** (`lingo.html`): the words used *about*
+  Black people in this period are the material for this session's sorting exercise. Protocol: numbered on
+  the slide, discussed by number, never spoken by the instructor
