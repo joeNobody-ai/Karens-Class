@@ -99,6 +99,7 @@ def main() -> int:                                          # noqa: C901
                 "course/exams/final.md", "course/exams/final-key.md"]
     expected += [f"course/class-{i:02d}.md" for i in range(1, 16)]
     expected += [f"course/assignments/homework-{i:02d}.md" for i in range(1, 16)]
+    expected += ["LICENSE", "course/rights.md"]
     for rel in expected:
         ok((ROOT / rel).exists(), f"exists: {rel}")
     ok(not (ROOT / "course/assignments/homework-16.md").exists(), "no stray homework beyond 15")
@@ -255,7 +256,30 @@ def main() -> int:                                          # noqa: C901
             leaked = [p.name for p in SITE.glob("*.html") if 'href="instructor/midterm-key' in read(p)]
             ok(not leaked, "exam keys are not linked from student pages", f"leaked in {leaked}")
 
-    print("10. prose hygiene")
+    print("10. rights notice")
+    rights_md = read(COURSE / "rights.md")
+    lic = read(ROOT / "LICENSE")
+    for needle in ("© 2026 Dr. Karen Powell", "All rights reserved", "Karens-Class™", "Dr. Karen Powell™",
+                   "unregistered trademark", "false marking", "No affiliation"):
+        ok(needle.lower() in rights_md.lower(), f"rights.md contains: {needle}")
+    ok("© 2026 Dr. Karen Powell. All rights reserved." in lic, "LICENSE carries the copyright line")
+    ok("Karens-Class™" in lic, "LICENSE carries the mark")
+    ok("no federal registration is claimed" in lic.lower(), "LICENSE disclaims registration")
+    pages = sorted(SITE.rglob("*.html")) if SITE.exists() else []
+    ok(len(pages) >= 38, f"built pages to check the notice on (got {len(pages)})")
+    for p in pages:
+        h = read(p)
+        rel = p.relative_to(SITE)
+        ok("© 2026 Dr. Karen Powell. All rights reserved." in h, f"{rel}: carries the copyright notice")
+        ok("Karens-Class™" in h, f"{rel}: carries the mark")
+        ok("®" not in h, f"{rel}: must not use the ® symbol before a registration issues")
+    ok((SITE / "rights.html").exists(), "rights page built into the site")
+    ok('href="rights.html"' in read(SITE / "class-01.html"), "rights page is reachable from the nav")
+    ok("rights.html" in read(SITE / "index.html"), "home page links the rights notice")
+    for src in list(COURSE.rglob("*.md")) + [ROOT / "README.md"]:
+        ok("CC BY 4.0" not in read(src), f"{src.name}: no stale CC BY licence text")
+
+    print("11. prose hygiene")
     bad_prose: list[str] = []
     for src in sorted(list(COURSE.rglob("*.md")) + [ROOT / "README.md"]):
         text = read(src)

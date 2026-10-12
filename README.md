@@ -25,6 +25,8 @@ revival *and* the 1987–1993 original it keeps calling back to.
 | `course/instructor-guide.md` | How to run the room: norm-setting, the hard conversations, objections and answers, accessibility, adaptation notes |
 | `course/lingo.md` | The vocabulary reference for the course: the three tiers applied to slang, where each section does work session by session, three classroom exercises, and the protocol for handling racialised vocabulary |
 | `course/sources.md` | Bibliography — books and articles by citation, plus institution links that were HTTP-checked on the build date |
+| `course/rights.md` | **Copyright, trademark, permissions and third-party credits** — read this before republishing anything |
+| `LICENSE` | The repository-level rights notice |
 | `course/rubrics.md` | Reusable rubrics (discussion, writing, data exercise, capstone) |
 | `docs/` | Generated HTML for the course site — this is what GitHub Pages serves |
 | `scripts/` | The build and the verifiers |
@@ -67,9 +69,20 @@ a do-not-distribute banner, but it does live in this repository. If you need it 
 reach: `python3 scripts/build_course.py --no-instructor` and delete the folder, or make the repo
 private. That trade-off is yours, not the script's — so the script prints a warning when it writes them.
 
-## Licence and attribution
+## Rights, authorship and credits
 
-Course materials: CC BY 4.0 — use them, adapt them, keep the attribution.
+**© 2026 Dr. Karen Powell. All rights reserved.**
+
+**Karens-Class™** and **Dr. Karen Powell™** are used as marks of Dr. Karen Powell in connection with these
+course materials. ™ indicates an unregistered mark; **no federal registration is claimed**, and the ®
+symbol is deliberately not used anywhere in this course — ® may lawfully be used only after a registration
+has actually issued.
+
+Classroom use is permitted with attribution to Dr. Karen Powell; the examination keys are not for student
+distribution. Resale, publication of the keys, and republication of the course as a competing product
+require written permission. The full notice, including the marking convention and a table of what this
+course does *not* own, is in [`LICENSE`](LICENSE) and [`course/rights.md`](course/rights.md).
+
 *A Different World* is the property of its rights holders; this course teaches *about* the show and
 reproduces no scripts, stills, or episode footage. Episode facts (titles, air dates, credits) are
 used for identification and commentary. See `course/sources.md` for the full note.

@@ -80,6 +80,8 @@ article ul,article ol{padding-left:1.3rem}
 .pager{display:flex;justify-content:space-between;gap:1rem;margin:2.6rem 0 0;padding-top:1rem;border-top:1px solid var(--line);font-size:.9rem}
 .banner{background:#fbeede;border:1px solid #d9a44b;border-radius:10px;padding:.8rem 1rem;margin:0 0 1.2rem;font-size:.92rem;color:#6b4a10}
 .banner strong{color:#4d3405}
+.rights{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:8px;padding:.75rem 1rem;margin:1rem 0;font-size:.9rem;color:var(--soft)}
+footer.site .rights{background:transparent;border:0;border-top:1px solid var(--line);border-radius:0;padding:.9rem 0 0;margin:0 0 .8rem}
 .grid{display:grid;gap:.9rem;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));margin:1.2rem 0}
 .card{display:block;text-decoration:none;color:inherit;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem}
 .card:hover{border-color:var(--gold)}
@@ -98,6 +100,7 @@ TITLES = {
     "lingo": "Lingo &amp; slang",
     "rubrics": "Rubrics",
     "sources": "Sources",
+    "rights": "Rights &amp; credits",
 }
 
 
@@ -130,7 +133,7 @@ def nav_html(current: str, instructor_pages: list[tuple[str, str]]) -> str:
         cls = ' class="here"' if slug == current else ""
         parts.append(f'<li><a href="{slug}.html"{cls}>{label}</a></li>')
     parts.append("</ul><h2>Reference</h2><ul>")
-    for slug in ("lingo", "rubrics", "sources"):
+    for slug in ("lingo", "rubrics", "sources", "rights"):
         cls = ' class="here"' if slug == current else ""
         parts.append(f'<li><a href="{slug}.html"{cls}>{TITLES[slug]}</a></li>')
     if instructor_pages:
@@ -148,6 +151,8 @@ def page(title: str, body: str, current: str, instructor_pages: list[tuple[str, 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title} · SOC 4150</title>
 <meta name="description" content="SOC 4150 — A Different World: Black Experience and American Society. A 15-session sociology seminar.">
+<meta name="author" content="Dr. Karen Powell">
+<meta name="copyright" content="© 2026 Dr. Karen Powell. All rights reserved. Karens-Class™ is an unregistered mark of Dr. Karen Powell.">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -173,10 +178,16 @@ def page(title: str, body: str, current: str, instructor_pages: list[tuple[str, 
 </article>
 </main>
 <footer class="site">
-  <p><strong>SOC 4150 — A Different World: Black Experience and American Society.</strong>
-  Course materials licensed CC BY 4.0: use and adapt them, keep the attribution.
-  <em>A Different World</em> is the property of its rights holders; this course teaches about the show and
-  reproduces no scripts, stills or footage.</p>
+  <p class="rights"><strong>Karens-Class™ — SOC 4150: <em>A Different World</em>: Black Experience and
+  American Society.</strong><br>
+  <strong>© 2026 Dr. Karen Powell. All rights reserved.</strong>
+  <em>Karens-Class™</em> and <em>Dr. Karen Powell™</em> are used as marks of Dr. Karen Powell; ™ indicates
+  an unregistered mark and no federal registration is claimed. Classroom use is permitted with
+  attribution; the examination keys are not for student distribution. Full notice:
+  <a href="rights.html">Rights, authorship and credits</a>.</p>
+  <p><em>A Different World</em> is the property of its rights holders; this course teaches about the series
+  and reproduces no scripts, stills, footage or dialogue. Not affiliated with, authorised by, or endorsed
+  by any rights holder.</p>
   <p>Built from <code>course/</code> by <code>scripts/build_course.py</code> · verified by
   <code>scripts/verify_course.py</code> · reference site:
   <a href="https://joenobody-ai.github.io/different-world-notes/v2/">different-world-notes</a></p>
@@ -214,6 +225,7 @@ def main() -> int:
     plan.append((COURSE / "lingo.md", "lingo"))
     plan.append((COURSE / "rubrics.md", "rubrics"))
     plan.append((COURSE / "sources.md", "sources"))
+    plan.append((COURSE / "rights.md", "rights"))
 
     missing = [str(p) for p, _ in plan if not p.exists()]
     if missing:
@@ -242,6 +254,11 @@ def main() -> int:
     idx_body = f"""<p class="kicker">Sociology · 15 sessions · upper division</p>
 <h1><em>A Different World</em>: Black Experience and American Society</h1>
 <p><strong>{CATALOG['course']['code']}</strong> · 15 sessions · 75 minutes · renumber to fit your catalogue.</p>
+<p class="rights"><strong>© 2026 Dr. Karen Powell. All rights reserved.</strong>
+<em>Karens-Class™</em> and <em>Dr. Karen Powell™</em> are used as marks of Dr. Karen Powell; ™ indicates an
+unregistered mark and no federal registration is claimed. Classroom use is permitted with attribution to
+Dr. Karen Powell; the examination keys are not for student distribution.
+<a href="rights.html">Rights, authorship and credits →</a></p>
 <p>Every session pairs a 2026 Netflix episode with the 1987–1993 original episode it calls back to, and asks
 what changed and what did not. The show's own device — the callback — is the course's method. Black
 experience is not a specialty bolted onto "general" sociology; it is where the general theory gets tested.</p>
