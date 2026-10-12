@@ -18,11 +18,12 @@ teaching materials for commercial purposes without prior written permission, exc
 *Karens-Class* and *Dr. Karen Powell* are used as marks of **Dr. Karen Powell** in connection with these
 course materials.
 
-**™ denotes an unregistered trademark.** No federal registration is claimed in either mark. The ® symbol
-is deliberately **not** used anywhere in this course: ® may lawfully be used only after a mark is
-actually registered with a trademark office, and using it without registration is a false marking. When
-and if a registration issues, the notice should be updated to ® on the registered goods and services,
-and this paragraph should be rewritten to record the registration number.
+**™ denotes an unregistered trademark.** No federal registration is claimed in either mark. The
+**registration symbol** — an R inside a circle — is deliberately **not** used anywhere in this course: it
+may lawfully be used only after a mark has actually been registered with a trademark office, and using it
+before registration is false marking. When and if a registration issues, the notice should be updated to
+carry that symbol on the registered goods and services, and this paragraph should be rewritten to record
+the registration number.
 
 Marking convention, if you reproduce the name of the course:
 
@@ -90,7 +91,7 @@ The copyright and trademark lines appear in three places and are generated from 
 
 To change the year, the holder, or the mark, edit the footer string in `scripts/build_course.py` and the
 `LICENSE`, then rebuild. `scripts/verify_course.py` checks that the notice appears on every generated
-page and that the ® symbol is never emitted.
+page and that the registration symbol never appears anywhere in the built site.
 
 *Rightsholder contact for permissions: add Dr. Powell's preferred professional address or department
 contact here before publishing.*

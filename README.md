@@ -74,9 +74,9 @@ private. That trade-off is yours, not the script's — so the script prints a wa
 **© 2026 Dr. Karen Powell. All rights reserved.**
 
 **Karens-Class™** and **Dr. Karen Powell™** are used as marks of Dr. Karen Powell in connection with these
-course materials. ™ indicates an unregistered mark; **no federal registration is claimed**, and the ®
-symbol is deliberately not used anywhere in this course — ® may lawfully be used only after a registration
-has actually issued.
+course materials. ™ indicates an unregistered mark; **no federal registration is claimed**, and the
+registration symbol (an R inside a circle) is deliberately not used anywhere in this course — it may
+lawfully be used only after a registration has actually issued.
 
 Classroom use is permitted with attribution to Dr. Karen Powell; the examination keys are not for student
 distribution. Resale, publication of the keys, and republication of the course as a competing product
