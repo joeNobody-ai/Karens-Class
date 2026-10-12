@@ -85,3 +85,9 @@ formation.
 - [ ] AI assistance disclosed if used
 
 **Grading:** see `midterm-key.md` for the model answers, the point allocation, and the rubric.
+
+---
+
+*© 2026 Dr. Karen Powell. All rights reserved. Karens-Class™ — used as a mark of Dr. Karen Powell;
+™ indicates an unregistered mark and no federal registration is claimed. Not for redistribution beyond
+this course.*

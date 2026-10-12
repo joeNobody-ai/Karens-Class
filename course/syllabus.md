@@ -119,3 +119,11 @@ screen-reader compatible; accommodations are honoured without documentation thea
 **Late work.** Homework is worth little individually and matters cumulatively: one week late, half
 credit; after two weeks, no credit but a conversation. Exams are due as scheduled except by prior
 arrangement.
+
+---
+
+*Karens-Class™ — SOC 4150: A Different World: Black Experience and American Society.*
+*© 2026 Dr. Karen Powell. All rights reserved. Karens-Class™ and Dr. Karen Powell™ are used as marks of
+Dr. Karen Powell; ™ indicates an unregistered mark and no federal registration is claimed. Classroom use
+is permitted with attribution; the examination keys are not for student distribution. Full notice:
+course/rights.md.*

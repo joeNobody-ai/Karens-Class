@@ -104,3 +104,9 @@ that critiques the use of popular culture in teaching.
 - Exhibits in Part B may be quoted; cite them as Exhibit A / Exhibit B.
 
 **Grading:** see `final-key.md` for model answers, point allocation, and the marker's rubric.
+
+---
+
+*© 2026 Dr. Karen Powell. All rights reserved. Karens-Class™ — used as a mark of Dr. Karen Powell;
+™ indicates an unregistered mark and no federal registration is claimed. Not for redistribution beyond
+this course.*
