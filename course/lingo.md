@@ -9,6 +9,22 @@ about a Black campus.
 https://joenobody-ai.github.io/different-world-notes/lingo.html
 (The Netflix-style view carries the same data: https://joenobody-ai.github.io/different-world-notes/v2/lingo.html)
 
+**Each entry now carries two things this course leans on directly:**
+
+1. **Senses** — for 14 terms that genuinely mean more than one thing (*shade*, *line*, *hook up*, *the
+   Pit*, *probate*, *drag*, *mess*, *homecoming*), the reference separates the senses rather than
+   pretending a word has one meaning. That is the single best short exercise in the whole course for
+   teaching that meaning is contextual: put four senses of *line* on the board and ask which one a scene
+   is using, and how the room knows.
+2. **Watch links** — 64 verified video links (14 of them from official channels) so a student can *see*
+   the term in use. Every link was checked through YouTube's own metadata endpoint, and each shows the
+   uploader's own title and channel, labelled official or third-party. **Note what these are and are
+   not:** they are video-level evidence (the clip exists, and this is what its maker called it), not
+   quoted dialogue. Captions are blocked from the machine that builds this project — the reasoning and
+   the eight routes tried are documented in `scripts/fetch_youtube.py`, which also ingests a transcript
+   the moment someone can supply one, and which refuses to publish a quoted line that has no recorded
+   transcript behind it.
+
 Read it before Session 3. Assign it before Session 8.
 
 ---
