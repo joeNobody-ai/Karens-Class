@@ -79,6 +79,58 @@ COURSES = {
         "lingo_crossrefs": ["class-03", "class-05", "class-08", "class-09", "class-10",
                             "assignments/homework-03"],
     },
+    "2100": {
+        "code": "SOC 2100",
+        "src": "soc2100",
+        "catalog": "data/soc2100_catalog.json",
+        "site": "docs/soc2100",
+        "sequential": False,
+        "expected_episodes": None,
+        "midterm_released_after": 7,
+        "midterm_due_before": 9,
+        "own_page_rule": False,
+        "lingo_full_sections": False,
+        "lingo_crossrefs": ["class-03", "assignments/homework-03"],
+    },
+    "2200": {
+        "code": "SOC 2200",
+        "src": "soc2200",
+        "catalog": "data/soc2200_catalog.json",
+        "site": "docs/soc2200",
+        "sequential": False,
+        "expected_episodes": None,
+        "midterm_released_after": 7,
+        "midterm_due_before": 9,
+        "own_page_rule": False,
+        "lingo_full_sections": False,
+        "lingo_crossrefs": ["class-03", "assignments/homework-03"],
+    },
+    "3200": {
+        "code": "SOC 3200",
+        "src": "soc3200",
+        "catalog": "data/soc3200_catalog.json",
+        "site": "docs/soc3200",
+        "sequential": False,
+        "expected_episodes": None,
+        "midterm_released_after": 7,
+        "midterm_due_before": 9,
+        "own_page_rule": False,
+        "lingo_full_sections": False,
+        "lingo_crossrefs": ["class-03", "assignments/homework-03"],
+    },
+    "3300": {
+        "code": "SOC 3300",
+        "src": "soc3300",
+        "catalog": "data/soc3300_catalog.json",
+        "site": "docs/soc3300",
+        "sequential": False,
+        "expected_episodes": None,
+        "midterm_released_after": 7,
+        "midterm_due_before": 9,
+        "own_page_rule": False,
+        "lingo_full_sections": False,
+        "lingo_crossrefs": ["class-03", "assignments/homework-03"],
+    },
 }
 
 fails: list[str] = []
@@ -346,12 +398,12 @@ def check_course(code: str, spec: dict) -> None:        # noqa: C901
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--course", choices=["4150", "1000"], default="4150",
+    ap.add_argument("--course", choices=["4150", "1000", "2100", "2200", "3200", "3300"], default="4150",
                     help="which course to verify (default: 4150)")
     ap.add_argument("--all", action="store_true", help="verify both courses")
     args = ap.parse_args()
 
-    codes = ["4150", "1000"] if args.all else [args.course]
+    codes = list(COURSES.keys()) if args.all else [args.course]
     for code in codes:
         print(f"\n===== {COURSES[code]['code']} ({code}) =====")
         check_course(code, COURSES[code])

@@ -63,6 +63,74 @@ COURSES = {
         "src_label": "soc1000/",
         "index_blurb": "Each week introduces one core idea — the sociological imagination, culture, socialization, groups, deviance, stratification, race, gender, family, education, media, social movements — and tests it against a scene from A Different World. No background in sociology or the show is assumed.",
     },
+    "2100": {
+        "code": "SOC 2100",
+        "short": "Social Problems",
+        "title": "Social Problems",
+        "brand": "SOC 2100 <em>·</em> Social Problems",
+        "kicker": "Sociology · 15 modules · 2000 level",
+        "desc": "SOC 2100 — Social Problems. A 2000-level survey taught through A Different World.",
+        "src": "soc2100",
+        "catalog": "data/soc2100_catalog.json",
+        "site": "docs/soc2100",
+        "sessions": 15,
+        "unit": "Module",
+        "other_href": "../index.html",
+        "other_label": "Karens-Class — course family",
+        "src_label": "soc2100/",
+        "index_blurb": "A survey of the problems sociologists study — poverty, racial and gender inequality, health, education, family, crime, work, housing, media — each tested against a scene from A Different World, each asked as a question: who says this is a problem, and what would count as a solution?",
+    },
+    "2200": {
+        "code": "SOC 2200",
+        "short": "Race and Ethnicity",
+        "title": "Race and Ethnicity in American Society",
+        "brand": "SOC 2200 <em>·</em> Race and Ethnicity",
+        "kicker": "Sociology · 15 modules · 2000 level",
+        "desc": "SOC 2200 — Race and Ethnicity in American Society. A 2000-level survey taught through A Different World.",
+        "src": "soc2200",
+        "catalog": "data/soc2200_catalog.json",
+        "site": "docs/soc2200",
+        "sessions": 15,
+        "unit": "Module",
+        "other_href": "../index.html",
+        "other_label": "Karens-Class — course family",
+        "src_label": "soc2200/",
+        "index_blurb": "A survey of race and ethnicity in American society — construction, racial formation, prejudice and discrimination, immigration, colourism, and the intersections with class, gender, health, education and justice — read through A Different World.",
+    },
+    "3200": {
+        "code": "SOC 3200",
+        "short": "Stratification and Inequality",
+        "title": "Social Stratification and Inequality",
+        "brand": "SOC 3200 <em>·</em> Stratification and Inequality",
+        "kicker": "Sociology · 15 modules · 3000 level",
+        "desc": "SOC 3200 — Social Stratification and Inequality. A 3000-level course taught through A Different World.",
+        "src": "soc3200",
+        "catalog": "data/soc3200_catalog.json",
+        "site": "docs/soc3200",
+        "sessions": 15,
+        "unit": "Module",
+        "other_href": "../index.html",
+        "other_label": "Karens-Class — course family",
+        "src_label": "soc3200/",
+        "index_blurb": "An upper-level course on how societies sort people into ranks: the theories of class and status, wealth and income, mobility, education, and the intersections with race and gender — tested against A Different World.",
+    },
+    "3300": {
+        "code": "SOC 3300",
+        "short": "Culture, Media, Representation",
+        "title": "Culture, Media, and Representation",
+        "brand": "SOC 3300 <em>·</em> Culture, Media, Representation",
+        "kicker": "Sociology · 15 modules · 3000 level",
+        "desc": "SOC 3300 — Culture, Media, and Representation. A 3000-level course taught through A Different World.",
+        "src": "soc3300",
+        "catalog": "data/soc3300_catalog.json",
+        "site": "docs/soc3300",
+        "sessions": 15,
+        "unit": "Module",
+        "other_href": "../index.html",
+        "other_label": "Karens-Class — course family",
+        "src_label": "soc3300/",
+        "index_blurb": "An upper-level course on culture, media, and representation — production, encoding and decoding, the gaze, the sitcom form, taste, memory, and resistance — read through A Different World.",
+    },
 }
 
 try:
@@ -362,14 +430,14 @@ week one. The reference site does the same thing, which is why homework points t
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--course", choices=["4150", "1000"], default="4150",
+    ap.add_argument("--course", choices=["4150", "1000", "2100", "2200", "3200", "3300"], default="4150",
                     help="which course to build (default: 4150)")
     ap.add_argument("--all", action="store_true", help="build both courses")
     ap.add_argument("--no-instructor", action="store_true",
                     help="omit the exam keys from the built site")
     args = ap.parse_args()
 
-    codes = ["4150", "1000"] if args.all else [args.course]
+    codes = list(COURSES.keys()) if args.all else [args.course]
     rc = 0
     for code in codes:
         print(f"\n=== building {COURSES[code]['code']} ===")
