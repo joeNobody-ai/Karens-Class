@@ -420,6 +420,10 @@ week one. The reference site does the same thing, which is why homework points t
             "<code>python3 scripts/build_course.py --course " + code + " --no-instructor</code> to omit them from the site.</p>",
             "instructor", instructor_pages, spec, catalog))
 
+    # static faculty hub page (hand-authored, soft client-side gate) — only at the site root
+    if spec["site"] == "docs" and (ROOT / "faculty.html").exists():
+        shutil.copyfile(ROOT / "faculty.html", SITE / "faculty.html")
+
     built = sorted(p.name for p in SITE.glob("*.html"))
     print(f"built {len(built)} pages into {SITE}")
     print("  " + " ".join(built))

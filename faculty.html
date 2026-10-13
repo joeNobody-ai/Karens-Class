@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Karens-Class — Faculty</title>
+<meta name="robots" content="noindex">
+<meta name="copyright" content="© 2026 Dr. Karen Powell. All rights reserved. Karens-Class™ is an unregistered mark of Dr. Karen Powell.">
+<!--
+  NOTE (for the site owner): this is a SOFT, CLIENT-SIDE gate only. GitHub Pages cannot do real
+  authentication. The username and password are visible in this file's JavaScript, and the course
+  links below are all public pages. This stops casual snooping; it does not secure anything. Do not
+  place genuinely confidential material behind it.
+-->
+<style>
+:root{--paper:#fbfaf7;--panel:#f4f1ea;--ink:#1b1a18;--soft:#4a463f;--mute:#7c766c;--line:#ded8cd;
+--navy:#152743;--gold:#9a7526;--red:#8c2f1c;
+--serif:ui-serif,"Iowan Old Style",Palatino,Georgia,serif;
+--sans:ui-sans-serif,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.62 var(--sans)}
+main{max-width:960px;margin:0 auto;padding:4rem 1.4rem 6rem}
+h1{font:600 clamp(1.8rem,4vw,2.4rem)/1.15 var(--serif);letter-spacing:-.01em;margin:.2rem 0 .4rem}
+h1 em{color:var(--gold);font-style:normal}
+.kicker{font:600 .74rem/1 var(--sans);letter-spacing:.15em;text-transform:uppercase;color:var(--gold)}
+.lede{color:var(--soft);max-width:62ch}
+/* gate */
+.gate{max-width:360px;margin:2.4rem auto 0;background:var(--panel);border:1px solid var(--line);
+border-left:3px solid var(--navy);border-radius:12px;padding:1.6rem 1.4rem}
+.gate label{display:block;font:600 .72rem/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;
+color:var(--mute);margin:1rem 0 .3rem}
+.gate input{width:100%;font:400 1rem/1.4 var(--sans);padding:.6rem .7rem;border:1px solid var(--line);
+border-radius:8px;background:#fff;color:var(--ink)}
+.gate input:focus{outline:2px solid var(--gold);border-color:var(--gold)}
+.gate button{margin-top:1.4rem;width:100%;font:600 .95rem/1 var(--sans);letter-spacing:.03em;padding:.7rem;
+border:0;border-radius:8px;background:var(--navy);color:#fff;cursor:pointer}
+.gate button:hover{background:#1e3560}
+.err{display:none;color:var(--red);font-size:.88rem;margin-top:.8rem}
+/* hub */
+#hub{display:none}
+.grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));margin:2rem 0}
+.card{display:block;text-decoration:none;color:inherit;background:var(--panel);border:1px solid var(--line);
+border-radius:12px;padding:1rem 1.1rem}
+.card:hover{border-color:var(--gold)}
+.card .n{font:600 .7rem/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--gold)}
+.card h2{margin:.4rem 0 .2rem;font-size:1.06rem;font-family:var(--serif);color:var(--ink)}
+.card .lvl{font-size:.8rem;color:var(--mute)}
+.card p{margin:.3rem 0 0;font-size:.9rem;color:var(--soft)}
+.rights{margin-top:3rem;border-top:1px solid var(--line);padding-top:1rem;font-size:.86rem;color:var(--mute)}
+.rights a{color:var(--navy)}
+</style>
+</head>
+<body>
+<main>
+  <p class="kicker">Karens-Class™ · Faculty view</p>
+  <h1>The course family, <em>in one place</em></h1>
+  <p class="lede">Six sociology courses, one case — <em>A Different World</em> — from first-year
+  introduction to the upper-division seminar. This page is the instructor's index.</p>
+
+  <div class="gate" id="gate">
+    <form id="loginform" autocomplete="off">
+      <label for="u">Username</label>
+      <input id="u" type="text" autocomplete="off" placeholder="username">
+      <label for="p">Password</label>
+      <input id="p" type="password" autocomplete="off" placeholder="password">
+      <button type="submit">Enter</button>
+      <p class="err" id="err">That did not match. Try again.</p>
+    </form>
+  </div>
+
+  <div id="hub">
+    <p class="lede">Select a course to open its site.</p>
+    <div class="grid">
+      <a class="card" href="soc1000/index.html"><span class="n">SOC 1000</span><h2>Introduction to Sociology</h2><span class="lvl">First year</span><p>The core toolkit, taught through the show.</p></a>
+      <a class="card" href="soc2100/index.html"><span class="n">SOC 2100</span><h2>Social Problems</h2><span class="lvl">2000 level</span><p>A survey of the problems sociologists study.</p></a>
+      <a class="card" href="soc2200/index.html"><span class="n">SOC 2200</span><h2>Race and Ethnicity in American Society</h2><span class="lvl">2000 level</span><p>Construction, formation, and inequality.</p></a>
+      <a class="card" href="soc3200/index.html"><span class="n">SOC 3200</span><h2>Social Stratification and Inequality</h2><span class="lvl">3000 level</span><p>Class, status, wealth, and mobility.</p></a>
+      <a class="card" href="soc3300/index.html"><span class="n">SOC 3300</span><h2>Culture, Media, and Representation</h2><span class="lvl">3000 level</span><p>Production, the gaze, taste, and memory.</p></a>
+      <a class="card" href="index.html"><span class="n">SOC 4150</span><h2><em>A Different World</em>: Black Experience and American Society</h2><span class="lvl">Upper-division seminar</span><p>The capstone seminar the family is built around.</p></a>
+    </div>
+    <p class="rights"><strong>© 2026 Dr. Karen Powell. All rights reserved.</strong>
+    Karens-Class™ and Dr. Karen Powell™ are used as marks of Dr. Karen Powell; ™ indicates an unregistered
+    mark and no federal registration is claimed. The individual course sites are public; this page is a
+    convenience index, not a security boundary. Full notice on each course's <a href="index.html">rights
+    page</a>.</p>
+  </div>
+</main>
+<script>
+(function () {
+  function showHub() {
+    document.getElementById('gate').style.display = 'none';
+    document.getElementById('hub').style.display = 'block';
+  }
+  window.addEventListener('DOMContentLoaded', function () {
+    try { if (sessionStorage.getItem('kc_faculty') === '1') showHub(); } catch (e) {}
+    document.getElementById('loginform').addEventListener('submit', function (ev) {
+      ev.preventDefault();
+      var u = document.getElementById('u').value.trim();
+      var p = document.getElementById('p').value.trim();
+      if (u === 'karen' && p === 'karen') {
+        try { sessionStorage.setItem('kc_faculty', '1'); } catch (e) {}
+        showHub();
+      } else {
+        document.getElementById('err').style.display = 'block';
+      }
+    });
+  });
+})();
+</script>
+</body>
+</html>

@@ -347,6 +347,8 @@ def check_course(code: str, spec: dict) -> None:        # noqa: C901
         for s in slugs:
             ok((SITE / f"{s}.html").exists(), f"{spec['site']}/{s}.html built")
         for p in SITE.glob("*.html"):
+            if p.name == "faculty.html":     # hand-authored static page, not a generated course page
+                continue
             html = read(p)
             ok("{{" not in html and "}}" not in html, f"{p.name}: no template leftovers")
             ok(not re.search(r"^\*\*[A-Z]", html, re.M), f"{p.name}: no unrendered bold markers")
