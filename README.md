@@ -1,14 +1,20 @@
 # Karens-Class
 
-A 15-session upper-division sociology seminar built on **A Different World** — the 2026 Netflix
-revival *and* the 1987–1993 original it keeps calling back to.
+Two sociology courses built on **A Different World** — the 2026 Netflix revival *and* the 1987–1993
+original it keeps calling back to:
+
+- **SOC 4150** — *A Different World: Black Experience and American Society*, a 15-session upper-division seminar.
+- **SOC 1000** — *Introduction to Sociology*, a 15-week first-year course that teaches the core intro toolkit through the same case.
 
 > **The through-line:** every session pairs a 2026 episode with the original episode(s) it "calls
 > back" to, and asks what changed and what did not. The show's own device — the callback — is the
 > course's method. Black experience is not a specialty bolted onto "general" sociology; it is where
 > the general theory gets tested.
 
-**Live course site:** https://joenobody-ai.github.io/Karens-Class/
+**Live course sites:**
+- SOC 4150 (upper division): https://joenobody-ai.github.io/Karens-Class/
+- SOC 1000 (first year): https://joenobody-ai.github.io/Karens-Class/soc1000/
+
 **Reference site the homework points at:** https://joenobody-ai.github.io/different-world-notes/v2/
 
 ---
@@ -26,7 +32,9 @@ revival *and* the 1987–1993 original it keeps calling back to.
 | `course/lingo.md` | The vocabulary reference for the course: the three tiers applied to slang, where each section does work session by session, three classroom exercises, and the protocol for handling racialised vocabulary |
 | `course/sources.md` | Bibliography — books and articles by citation, plus institution links that were HTTP-checked on the build date |
 | `course/rights.md` | **Copyright, trademark, permissions and third-party credits** — read this before republishing anything |
-| `LICENSE` | The repository-level rights notice |
+| `soc1000/…` | The SOC 1000 course tree: `syllabus.md`, `class-01.md`…`class-15.md`, `assignments/`, `exams/`, plus its own `instructor-guide.md`, `lingo.md`, `rubrics.md`, `sources.md`, `rights.md` |
+| `data/course_catalog.json`, `data/soc1000_catalog.json` | The machine-readable maps the verifier checks each course's prose against |
+| `LICENSE` | The repository-level rights notice (covers both courses) |
 | `course/rubrics.md` | Reusable rubrics (discussion, writing, data exercise, capstone) |
 | `docs/` | Generated HTML for the course site — this is what GitHub Pages serves |
 | `scripts/` | The build and the verifiers |
@@ -50,13 +58,13 @@ move faster than a syllabus. Homework 5 and 14 build the re-check into the assig
 
 ```bash
 . .venv/bin/activate                      # needs: uv pip install markdown  (see scripts/requirements.txt)
-python3 scripts/build_course.py           # markdown -> docs/
-python3 scripts/verify_course.py          # must print ALL CHECKS PASS
+python3 scripts/build_course.py --all     # build both courses (or: --course 1000 / --course 4150)
+python3 scripts/verify_course.py --all    # must print ALL CHECKS PASS
 ```
 
 `build_course.py` uses the `markdown` package from `.venv` (see `scripts/requirements.txt`).
 `verify_course.py` is stdlib-only and checks: all 15 sessions and 15 homework files exist and are
-consistent with `data/course_catalog.json`, every 2026 episode is taught in order, every original
+consistent with each course's catalog, every 2026 episode is taught in order (in SOC 4150), every original
 episode assigned is real (title *and* air date matched against the episode list), every deep link into
 the reference site points at an anchor that actually exists, every external link was HTTP-verified as
 live or is listed in the documented blocked-to-bots allowlist, the lecture arc in every session sums to

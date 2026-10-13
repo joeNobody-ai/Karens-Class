@@ -1,18 +1,18 @@
 #!/usr/bin/env bash
 # finalize.sh — regenerate the bibliography, rebuild the site, verify, and ship. Run from karens-class/.
 set -u
-cd /opt/data/profiles/different-world/projects/different-world-fan-page/karens-class
-. ../.venv/bin/activate
+cd /opt/data/profiles/karens-class/projects/different-world-fan-page/karens-class
+export PATH="$PWD/../.venv/bin:$PATH"
 
 echo "=== regenerate the bibliography from the check log ==="
 python3 scripts/make_sources.py
 
 echo "=== rebuild the site ==="
-python3 scripts/build_course.py > /tmp/b.txt 2>&1
+python3 scripts/build_course.py --all > /tmp/b.txt 2>&1
 echo "build exit=$?  pages=$(ls docs/*.html | wc -l)  instructor=$(ls docs/instructor/*.html 2>/dev/null | wc -l)"
 
 echo "=== verify (must print ALL CHECKS PASS) ==="
-python3 scripts/verify_course.py > /tmp/v.txt 2>&1
+python3 scripts/verify_course.py --all > /tmp/v.txt 2>&1
 echo "verify exit=$?"
 tail -3 /tmp/v.txt
 
